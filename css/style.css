@@ -350,12 +350,13 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    margin-bottom: 1.2rem;
 }
  
 #chapter .articles-container > * {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     align-items: center;
     grid-column: 1 / span 2;
 }
