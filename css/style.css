@@ -396,3 +396,41 @@ h1, h2, h3, h4, h5, h6 {
     width: 20%;
     padding: .62rem;
 }
+
+/*** CHAPTER MENU ***/
+
+.accordion {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+    padding: .8rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: var(--secondary-color); 
+}
+
+.accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    color: var(--light-color);
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    font-size: 0.9rem;
+    padding: 0 2rem;
+    background-color: var(--primary-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
