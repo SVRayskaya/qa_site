@@ -6,6 +6,8 @@
     --light-color: rgb(246,243,209);
     --dark-color: rgb(211, 119, 43);
     --emph-color: rgb(85, 0, 0);
+    --dark-red-color:rgb(73, 30, 38);
+    --main-area-color: rgb(206, 119, 46);
     --max-width: 1100px;
 }
 
@@ -14,7 +16,7 @@
     --tech-color: rgb(22, 25, 87);
     --auto-color:rgb(85,0,0);
     --terms-color:rgb(248, 224, 145);
-  }
+}
 
 /*** MAIN STYLES ***/
 
@@ -154,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
 }
 
+.bg-dark-red h3 a {
+    color: var(--light-color);
+}
+
 .bg-secondary h3 a {
     color: var(--primary-color);
 }
@@ -162,7 +168,16 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--dark-color);
     color: #fff;
 }
-  
+.bg-main {
+    background: var(--main-area-color);
+    color: #fff;
+}
+
+.bg-dark-red {
+    background: var(--dark-red-color);
+    color: #fff;
+}
+
 .bg-primary {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -177,6 +192,10 @@ h1, h2, h3, h4, h5, h6 {
 .bg-dark h2,
 .bg-dark h3,
 .bg-dark a,
+.bg-dark-red h1,
+.bg-dark-red h2,
+.bg-dark-red h3,
+.bg-dark-red a,
 .bg-primary h1,
 .bg-primary h2,
 .bg-primary h3,
@@ -417,7 +436,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active, .accordion:hover {
-    background-color: var(--secondary-color); 
+    background-color: var(--dark-color);
+    color: var(--secondary-color); 
 }
 
 .accordion:after {
@@ -434,11 +454,12 @@ h1, h2, h3, h4, h5, h6 {
 .panel {
     font-size: 0.9rem;
     padding: 0 2rem;
-    background-color: var(--dark-color);
+    background-color: var(--dark-red-color) !important;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-style: solid;
     border-color: var(--light-color);
     border-width: 0.5px;
+    color: var(--secondary-color);
 }
