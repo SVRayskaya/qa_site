@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color) !important;
 }
 
-/*** INNER GRID GONTAINER ***/
+/*** INNER GRID CONTAINER ***/
 
 .page-container {
   display: grid;
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-nav .container {
     display: grid;
-    grid-template-columns: 6fr 3fr 2fr;
+    grid-template-columns: 6fr 2fr;
     padding: 1rem;
     align-items: center;
     
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 #home-articles .articles-container > #hor-first,
-#home-articles .articles-container > #hor-last{
+#home-articles .articles-container > #hor-last {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -407,6 +407,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-footer a {
     color: var(--light-color);
+}
+
+#main-footer .list li {
+    width: 100%;
 }
 
 #main-footer .footer-container {
