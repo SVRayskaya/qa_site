@@ -100,6 +100,16 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+#article-text {
+    text-indent: 25px;
+    line-height: 1.5;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.showcase-content p, .articles-container p {
+    text-align: justify;
+}
 .category {
     display: inline-block;
     color: #fff;
@@ -170,7 +180,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bg-main {
     background: var(--main-area-color);
-    color: #fff;
+    color: var(--secondary-color);
+}
+
+.bg-main h1 {
+    color: var(--light-color);
 }
 
 .bg-dark-red {
@@ -358,8 +372,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #eee;
+    background: var(--primary-color);
+    color: var(--emph-color);
     padding: 0.5rem;
+    font-family: sans-serif;
 }
   
 #article .meta .category {
